@@ -35,6 +35,8 @@ div {
 
   background-color: limegreen;
   opacity: 0;
+
+  transition: linear 200ms;
 }
 
 .diamond {
@@ -45,6 +47,7 @@ div {
 
   background-color: hotpink;
   transform: rotate(45deg);
+  transition: linear 300ms;
 }
 
 .panel {
@@ -104,14 +107,9 @@ div {
   opacity: 1;
 }
 
-
-
-
-
-
-
-
-
+.move {
+  right: 75px;
+}
 
 
 
