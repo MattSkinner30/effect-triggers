@@ -61,6 +61,7 @@ div {
 
   color: darkgoldenrod;
   text-align: center;
+  transition: linear 200ms;
 }
 
 .panel h2 {
@@ -101,6 +102,19 @@ div {
   overflow: hidden;
 
   color: mediumpurple;
+  transition: linear 200ms;
+  animation: append 0.5s linear forwards;
+}
+
+@keyframes append {
+
+  0% {
+    max-height: 0%;
+  }
+
+  100% {
+    max-height: 100%;
+  }
 }
 
 .show {
@@ -111,24 +125,38 @@ div {
   right: 75px;
 }
 
+.collapse {
+  max-height: 0;
+}
 
+.bounce {
+  animation: bounce 1s;
+}
 
+@keyframes bounce {
 
+  0% {
+    top: 0;
+    right: 1em;
+  }
 
+  25% {
+    top: 40px;
+    right: 5em;
+  }
 
+  50% {
+    top: 0;
+    right: 8em;
+  }
 
+  75% {
+    top: 40px;
+    right: 11em;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  100% {
+    top: 20px;
+    right: 14em;
+  }
+}
